@@ -14,7 +14,7 @@ services:
     ports:  
       - 8080:8088
     environment:
-      MONGODB_SERVER: "localhost"
+      MONGODB_SERVER: "mongo"
       MONGODB_PORT: "27017"
       MONGODB_DATABASE: "servercomm"
       JWT_SECRET_TOKEN: "jwt_secret_token"
