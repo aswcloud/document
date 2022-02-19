@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3.8'
 services:
   mongo:
     image: mongo
@@ -14,7 +14,8 @@ services:
     ports:  
       - 8080:8088
     environment:
-      - MONGODB_SERVER: localhost
-      - MONGODB_PORT: 27017
-      - MONGODB_DATABASE: servercomm
-      - JWT_SECRET_TOKEN: jwt_secret_token_9397c1c9fbde5a790aa42c876fb451b1116b8247bed0f2abaf7de7a93b6c2ef07cc0b87281ae5138efe34c48004113c16edd82d1a12f08714e32d34801c10089d916190284bd4f4a90441ed6f5a18e7e0a1420b120b243a7b9ff646deb8a855e
+      MONGODB_SERVER: "localhost"
+      MONGODB_PORT: "27017"
+      MONGODB_DATABASE: "servercomm"
+      JWT_SECRET_TOKEN: "jwt_secret_token"
+    
